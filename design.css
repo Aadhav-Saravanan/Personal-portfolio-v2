@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
+@import url('https://api.fonts.coollabs.io/css2?family=Poppins&display=swap');
+@import url('https://api.fonts.coollabs.io/css2?family=Outfit&display=swap');
 * {
-    font-family: "Poppins", sans-serif;
+    font-family:  "Outfit", sans-serif;
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
@@ -10,11 +10,14 @@
 ::-webkit-scrollbar{
     display: none;
 }
+body{
+    height: 200vh;
+}
 :root{
     background-color: #1b1a27;
 }
 html{
-    height: 200vh;
+    height: 210vh;
 }
 html {
     position: relative;
@@ -50,6 +53,7 @@ html::before {
 
 .navbar ul li{
     display: inline;
+    font-family: "Outfit", "Helvetica";
 }
 
 .navbar ul{
@@ -61,6 +65,7 @@ html::before {
 .navbar li{
     margin: 5px;
     transition:linear 0.3s;
+    font-family: "Outfit", "Helvetica";
 }
 .navbar li:not(.logo){
     padding: 5px;
@@ -70,6 +75,8 @@ html::before {
     color: #fffffffb;
     text-decoration: none;
     line-height: 50px;
+    font-family: "Outfit", "Helvetica";
+    letter-spacing: 2px;
 }
 
 .title{
@@ -82,6 +89,7 @@ html::before {
 
 .logo{
     font-size: 24px;
+    letter-spacing: 2px;
 }
 
 .navbar li:hover:not(.logo){
@@ -108,7 +116,7 @@ html::before {
 .main-content{
     padding: 12px;
     position: relative;
-    top: 30vh;
+    top: 35vh;
     left: 20vh;
     display: inline-block;
 }
@@ -129,5 +137,65 @@ html::before {
     height: 100vh;
     width: 100%;
     position: relative;
-    top: 80vh;  
+    top: 85vh;
+}
+
+.pro-title{
+    font-size: 28px;
+    color: white;
+    font-weight: 200;
+    letter-spacing: 20px;
+    position: relative;
+    font-family: "Outfit", "Helvetica Neue";
+    top: 70px;
+    left: 42.5%;
+    display: inline;
+}
+
+.card{
+    background-color: #392F5A;
+    height: 300px;
+    width: 300px;
+    margin: 3px;
+    transition: 0.3s;
+}
+
+.card:hover:not(.code){
+    background-color: #372554;
+    opacity: 0.9;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    max-width: 1016px;
+    width: calc(100% - 20px);
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+    top: 50px;
+}
+
+.code{
+    height: auto;
+    width: 280px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+    top: 10px
+}
+
+a{
+    text-decoration: none;
+}
+
+.card p {
+    color: white;
+    position: relative;
+    top: 30px;
+    text-align: center;
+    font-family: "Outfit";
 }
